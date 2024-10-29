@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NATYFLIX</title>
+    <title>Cine&Series - Pagina Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1>Catalogo de acordo com minha opniao</h1>
-            <p>EFEITO MANDELA, NUNCA FOI NATFLIX SEMPRE FOI NATYFLIX</p>
-               <h2>TOP 10 FILMES</h2>
-                  <p>O Fastastico Senhor Raposo</p>
-                    
 
+    <!-- Cabecalho do Site -->
+    <header>
+        <h1>Cine&Series</h1>
+        <p>Bem-vindo ao seu site favorito sobre filmes e series!</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e series..." onkeyup="searchMovies()">
+    </header>
+
+    <!-- Barra de Navegacao -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteudo Principal -->
+    <div class="container">
+        <h2>Ultimos Lancamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 1">
+                <h3>Filme 1</h3>
+                <p>Aventura, Acao</p>
+                <p>2023</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 2">
+                <h3>Filme 2</h3>
+                <p>Drama, Suspense</p>
+                <p>2022</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Serie 1">
+                <h3>Serie 1</h3>
+                <p>Comedia</p>
+                <p>1ª Temporada</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodape -->
+    <footer>
+        <p>&copy; 2023 Cine&Series. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
